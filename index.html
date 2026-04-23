@@ -1,0 +1,44 @@
+<nav class="global-nav">
+  <div class="links">
+    <a href="https://codepen.io/your-user/full/HOME_PEN_ID">Home</a>
+    <a href="https://codepen.io/your-user/full/QUIZ_PEN_ID">Start Quiz</a>
+    <a href="https://codepen.io/your-user/full/ABOUT_PEN_ID">Our Story</a>
+  </div>
+</nav>
+<div class="lab-container">
+  <header>
+    <h1>SCENT<span>ARCHITECT</span></h1>
+    <p>Design your sustainable signature fragrance</p>
+  </header>
+
+  <div class="main-interface">
+    <div class="visualizer">
+      <div class="bottle">
+        <div class="cap"></div>
+        <div class="neck"></div>
+        <div class="glass">
+          <div id="liquid" class="liquid"></div>
+          <div class="label">
+            <small>PROTOTYPE</small>
+            <h2 id="scent-name">The Baseline</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-box">
+      <h3>01. Select Your Vibe</h3>
+      <div class="options">
+        <button onclick="updateScent('Midnight', '#2c3e50', 'Woody/Musk')">Midnight Forest</button>
+        <button onclick="updateScent('Solar', '#f1c40f', 'Citrus/Bright')">Solar Citrus</button>
+        <button onclick="updateScent('Botanica', '#2ecc71', 'Floral/Fresh')">Botanica Garden</button>
+        <button onclick="updateScent('Arctic', '#3498db', 'Clean/Ozonic')">Arctic Linen</button>
+      </div>
+      
+      <div id="checkout-area" class="hidden">
+        <p>Your custom blend is ready.</p>
+        <button class="buy-btn">Order Sample ($0.00 - Beta)</button>
+      </div>
+    </div>
+  </div>
+</div>

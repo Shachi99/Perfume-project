@@ -1,0 +1,30 @@
+<nav class="global-nav">
+  <div class="links">
+    <a href="https://codepen.io/your-user/full/HOME_PEN_ID">Home</a>
+    <a href="https://codepen.io/your-user/full/QUIZ_PEN_ID">Start Quiz</a>
+    <a href="https://codepen.io/your-user/full/ABOUT_PEN_ID">Our Story</a>
+  </div>
+</nav>
+ <div id="quiz-app">
+  <div class="glass-box">
+    <div class="quiz-header">
+      <span id="progress-text">Question 1 of 10</span>
+      <div class="progress-bar-bg"><div id="progress-fill"></div></div>
+    </div>
+
+    <div id="question-section">
+      <h2 id="question-text">Analyzing your sensory profile...</h2>
+      <div id="options-container"></div>
+    </div>
+
+    <div id="result-section" class="hidden">
+      <small>YOUR DIGITAL FORMULA</small>
+      <h1 id="scent-title">Scent No. 000</h1>
+      <div class="divider"></div>
+      <p id="scent-explanation"></p>
+      <div class="notes-list" id="scent-notes"></div>
+      <button class="cta-btn" onclick="orderNow()">Order Custom Sample</button>
+      <button class="secondary-btn" onclick="location.reload()">Reset Lab</button>
+    </div>
+  </div>
+</div>
