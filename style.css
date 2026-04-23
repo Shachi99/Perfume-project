@@ -1,3 +1,40 @@
+/* Navigation Bar Styling */
+.global-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.global-nav .links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.global-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.global-nav a:hover {
+  opacity: 1;
+}
+
+/* Add margin to containers so they don't hide under the nav */
+.lab-container, #quiz-app, .about-page {
+  margin-top: 100px !important;
+}
 :root {
   --bg: #0f0f0f;
   --glass: rgba(255, 255, 255, 0.1);
