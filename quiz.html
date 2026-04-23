@@ -1,11 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scent Architect | The Lab Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <nav class="global-nav">
   <div class="links">
-    <a href="https://codepen.io/your-user/full/HOME_PEN_ID">Home</a>
-    <a href="https://codepen.io/your-user/full/QUIZ_PEN_ID">Start Quiz</a>
-    <a href="https://codepen.io/your-user/full/ABOUT_PEN_ID">Our Story</a>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Start Quiz</a>
+    <a href="about.html">Our Story</a>
   </div>
 </nav>
- <div id="quiz-app">
+
+<div id="quiz-app">
   <div class="glass-box">
     <div class="quiz-header">
       <span id="progress-text">Question 1 of 10</span>
@@ -22,9 +33,13 @@
       <h1 id="scent-title">Scent No. 000</h1>
       <div class="divider"></div>
       <p id="scent-explanation"></p>
-      <div class="notes-list" id="scent-notes"></div>
+      <div id="scent-notes" class="notes-list" style="margin-bottom: 20px; font-style: italic; color: #fff;"></div>
       <button class="cta-btn" onclick="orderNow()">Order Custom Sample</button>
       <button class="secondary-btn" onclick="location.reload()">Reset Lab</button>
     </div>
   </div>
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>
